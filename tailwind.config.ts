@@ -8,7 +8,7 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      sans: 'var(--font-inter)',
+      mono: ['var(--font-geist-mono)'],
     },
     // gridTemplateRows: {
     //   app: 'min-content max-content',

@@ -1,9 +1,7 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 import { Header } from '@/components/header'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,10 +14,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="pt">
-      <body
-        className={`dark:bg-slate-900 dark:text-slate-200 antialiased${inter.className}`}
-      >
+    <html lang="pt" className={GeistMono.className}>
+      <body className={`dark:bg-slate-900 dark:text-slate-200 antialiased`}>
         <Header />
         {children}
       </body>

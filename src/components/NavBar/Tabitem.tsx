@@ -2,6 +2,7 @@
 
 import * as Tabs from '@radix-ui/react-tabs'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 export interface TabItemProps {
   value: string
@@ -9,19 +10,25 @@ export interface TabItemProps {
   isSelected?: boolean
 }
 
+const titleTranslationsForURL: Record<string, string> = {
+  sobre: 'about',
+  projetos: 'projects',
+  contatos: 'contacts',
+}
+
 export function TabItem({ value, title, isSelected = false }: TabItemProps) {
+  const urlNavBar = titleTranslationsForURL[title.toLowerCase()] || title
+
   return (
     <Tabs.Trigger
       value={value}
       className=":px-1 group relative pb-4 text-sm font-medium text-zinc-500 outline-none hover:text-violet-700 data-[state=active]:text-violet-700 dark:text-zinc-300 dark:hover:text-violet-300 dark:data-[state=active]:text-violet-300"
     >
-      <span
-        // onClick={''}
-        className="whitespace-nowrap rounded group-focus-visible:ring-2 group-focus-visible:ring-violet-400 group-focus-visible:ring-offset-4"
-      >
-        {title}
-      </span>
-
+      <Link href={`/${urlNavBar}`}>
+        <span className="whitespace-nowrap rounded group-focus-visible:ring-2 group-focus-visible:ring-violet-400 group-focus-visible:ring-offset-4">
+          {title}
+        </span>
+      </Link>
       {isSelected && (
         <motion.div
           layoutId="activeTab"
