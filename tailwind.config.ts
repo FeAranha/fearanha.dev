@@ -13,6 +13,23 @@ const config: Config = {
     // gridTemplateRows: {
     //   app: 'min-content max-content',
     // },
+    extend: {
+      colors: {
+        tuna: {
+          50: '#f6f7f9',
+          100: '#eceef2',
+          200: '#d6d9e1',
+          300: '#b2b8c7',
+          400: '#8892a8',
+          500: '#69748e',
+          600: '#545e75',
+          700: '#454c5f',
+          800: '#3b4151',
+          900: '#30343f',
+          950: '#23262e',
+        },
+      },
+    },
   },
   plugins: [],
 }

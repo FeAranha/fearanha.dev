@@ -14,19 +14,19 @@ export function NavBar() {
         <ScrollArea.Viewport className="w-full overflow-x-scroll">
           <Tabs.List>
             <TabItem
-              value="tab1"
-              title="SOBRE"
-              isSelected={currentTab === 'tab1'}
+              value="about"
+              title="sobre"
+              isSelected={currentTab === 'about'}
             />
             <TabItem
-              value="tab2"
-              title="PROJETOS"
-              isSelected={currentTab === 'tab2'}
+              value="projects"
+              title="projetos"
+              isSelected={currentTab === 'projects'}
             />
             <TabItem
-              value="tab3"
+              value="contacts"
               title="CONTATOS"
-              isSelected={currentTab === 'tab3'}
+              isSelected={currentTab === 'contacts'}
             />
           </Tabs.List>
         </ScrollArea.Viewport>
