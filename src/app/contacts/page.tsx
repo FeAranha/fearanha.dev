@@ -1,3 +1,3 @@
-export default function Home() {
-  return <h1>Contatos</h1>
+export default function Contacts() {
+  return <h1>contatos</h1>
 }
