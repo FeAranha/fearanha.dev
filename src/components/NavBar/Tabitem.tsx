@@ -1,4 +1,4 @@
-'use client'
+// Client  Boundaries | not async
 
 import * as Tabs from '@radix-ui/react-tabs'
 import { motion } from 'framer-motion'

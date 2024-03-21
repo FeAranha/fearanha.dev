@@ -1,17 +1,29 @@
-'use client'
+// Client  Boundaries | not async
 
 import * as Tabs from '@radix-ui/react-tabs'
 import * as ScrollArea from '@radix-ui/react-scroll-area'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { TabItem } from './Tabitem'
 
-export function NavBar() {
+interface NavBarProps {
+  resetNavBar: boolean
+  setResetNavBar: (value: boolean) => void
+}
+
+export function NavBar({ resetNavBar, setResetNavBar }: NavBarProps) {
   const [currentTab, setCurrentTab] = useState('')
+
+  useEffect(() => {
+    if (resetNavBar) {
+      setCurrentTab('')
+      setResetNavBar(false)
+    }
+  }, [resetNavBar, setResetNavBar])
 
   return (
     <Tabs.Root value={currentTab} onValueChange={setCurrentTab}>
       <ScrollArea.Root className="w-full" type="scroll">
-        <ScrollArea.Viewport className="w-full overflow-x-scroll">
+        <ScrollArea.Viewport className="w-full">
           <Tabs.List>
             <TabItem
               value="about"
