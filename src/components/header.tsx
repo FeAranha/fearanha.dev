@@ -14,7 +14,7 @@ export function Header() {
   }
 
   return (
-    <div className="w-full h-10 flex flex-row items-baseline justify-between">
+    <div className="w-full h-10 flex flex-row items-center justify-between">
       <Link href="/">
         <Image src={Logo} alt="logo" onClick={handleResetNavBar} />
       </Link>

@@ -2,11 +2,9 @@ import { Suspense } from 'react'
 import Loading from '../loading'
 
 export default async function Home() {
-  await new Promise((resolve) => setTimeout(resolve, 3000)) // para ver o loading...
-
   return (
     <Suspense fallback={<Loading />}>
-      <div className="grid grid-cols-1 sm:grid-cols-2 min-h-screen gap-4 space-y-2">
+      <div className="overflow-y-hidden grid grid-cols-1 sm:grid-cols-2 min-h-screen gap-4 space-y-2">
         <div className="col-span-1 sm:col-span-1 flex flex-col justify-center">
           <div className="flex flex-col items-end">
             <div className=" flex flex-col">

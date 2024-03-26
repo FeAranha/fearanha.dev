@@ -15,6 +15,9 @@ const config: Config = {
     // },
     extend: {
       colors: {
+        emerald: {
+          500: '#0cbd7c',
+        },
         blueZodiac: {
           50: '#f1f6fd',
           100: '#e0eaf9',

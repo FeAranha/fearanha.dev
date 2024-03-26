@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <body
-        className={`${GeistMono.className}max-w-[760px] bg-tuna-900 text-tuna-300 antialiased m-4 overflow-y-hidden`}
+        className={`${GeistMono.className} bg-tuna-900 text-tuna-300 antialiased m-4`}
       >
         <Header />
         {children}
