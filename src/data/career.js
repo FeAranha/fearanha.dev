@@ -13,11 +13,11 @@ const items = [
     jobTitle: 'Analista de TI',
     company: 'Innovativ',
     description:
-      'Admnistrei a infraestrutura de TI e sites, implantei o sistema GLPI Service Desk para monitoramento de chamados e tarefas do time de TI. Atuei no licenciamento GAP Microsoft e implementação de politicas de segurança e acesso de colaboradores por meio de sistema de RH e catracas. Intermédio entre ERP e Negocio',
+      'Admnistrei a infraestrutura de TI e sites, implantei o sistema GLPI Service Desk para monitoramento de chamados e tarefas do time de TI. Atuei no licenciamento GAP Microsoft e implementação de politicas de segurança e acesso de colaboradores por meio de sistema de RH e catracas. Intermédio entre ERP e Negocio.',
     companyUrl: 'https://www.innovativ.com.br/',
     startDate: '2014-04',
-    endDate: '2020-3',
-    location: 'Santa Barbara D`Oest , São Paulo',
+    endDate: '2020-03',
+    location: 'Santa Barbara D`Oeste , São Paulo',
   },
   {
     jobTitle: 'Suporte TI',
