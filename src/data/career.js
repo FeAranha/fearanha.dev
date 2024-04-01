@@ -1,6 +1,15 @@
 const items = [
   {
     jobTitle: 'Full Stack',
+    company: 'Freelancer',
+    description: 'Workana, LinkedIn, 99freelas, GetNinjas.',
+    companyUrl: 'https://github.com/FeAranha/fearanha.dev',
+    startDate: '2022-09',
+    endDate: '',
+    location: 'Brasil',
+  },
+  {
+    jobTitle: 'Full Stack',
     company: 'NAPP Solutions',
     description:
       'Atuei no time de operações como Developer responsável pela manutenção na agenda(react/node) de Integrações. Realizei ETL por APIs em Python e NodeJS.',
