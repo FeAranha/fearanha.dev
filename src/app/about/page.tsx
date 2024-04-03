@@ -9,19 +9,19 @@ export default function About() {
       </h1>
       <div className="flex flex-col-reverse max-w-[760px] justify-center items-center sm:flex-row">
         <div className="flex flex-col">
-          <p className="mb-5">
+          <p className="mb-5 text-justify">
             Iniciei como Suporte de TI e depois como Administrador de Redes,
             Service Desk e intermediário entre ERP e Negócio. Atuei por 6 anos
             como Analista de TI gerenciando todo o parque de TI.
           </p>
-          <p className="mb-5">
+          <p className="mb-5 text-justify">
             Implantei e monitorei um sistema de service desk GLPI em ambiente
             Linux, gerenciei técnicos de suporte, adequei toda a infraestrutura
             com relação a licenciamentos de softwares e GAP Microsoft e
             segurança da informação conscientizando colaboradores e adoção de
             firewall, antivírus corporativo entre outras medidas.
           </p>
-          <p className="mb-5">
+          <p className="mb-5 text-justify">
             Atualmente Desenvolvo sistemas Web e aplicativos, venho me
             aprofundando em JavaScript e TypeScript, especificamente na
             biblioteca ReactJS e framework NextJS, no Backend com NodeJS e
@@ -30,7 +30,7 @@ export default function About() {
           </p>
         </div>
         <Image
-          className="self-stretch w-[200px] h-[250px] sm:w-[300px] sm:h-[400px] mb-5"
+          className="self-stretch w-[200px] h-[250px] sm:w-[300px] sm:h-[400px] mb-5 ml-5"
           src={ProfileImg}
           alt=""
         />

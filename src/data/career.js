@@ -1,6 +1,6 @@
 const items = [
   {
-    jobTitle: 'Full Stack',
+    jobTitle: 'Full-Stack Developer',
     company: 'Freelancer',
     description: 'Workana, LinkedIn, 99freelas, GetNinjas.',
     companyUrl: 'https://github.com/FeAranha/fearanha.dev',
@@ -9,7 +9,7 @@ const items = [
     location: 'Brasil',
   },
   {
-    jobTitle: 'Full Stack',
+    jobTitle: 'Full-Stack Developer',
     company: 'NAPP Solutions',
     description:
       'Atuei no time de operações como Developer responsável pela manutenção na agenda(react/node) de Integrações. Realizei ETL por APIs em Python e NodeJS.',
@@ -25,7 +25,7 @@ const items = [
       'Admnistrei a infraestrutura de TI e sites, implantei o sistema GLPI Service Desk para monitoramento de chamados e tarefas do time de TI. Atuei no licenciamento GAP Microsoft e implementação de politicas de segurança e acesso de colaboradores por meio de sistema de RH e catracas. Intermédio entre ERP e Negocio.',
     companyUrl: 'https://www.innovativ.com.br/',
     startDate: '2014-04',
-    endDate: '2020-03',
+    endDate: '2020-05',
     location: 'Santa Barbara D`Oeste , São Paulo',
   },
   {

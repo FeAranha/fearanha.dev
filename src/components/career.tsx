@@ -10,7 +10,7 @@ export function Carrer() {
 
     let durationStr = ''
 
-    if (durationObj.years > 1) {
+    if (durationObj.years ?? 0 > 1) {
       durationStr = `${durationObj.years} yrs `
     } else if (durationObj.years === 1) {
       durationStr = `${durationObj.years} yr `
@@ -28,7 +28,7 @@ export function Carrer() {
       {items.map((data, index) => {
         return (
           <div key={index} className="grid grid-flow-row mb-5 ">
-            <h3 className="mb-2 font-bold text-tuna-50">{data.jobTitle}</h3>
+            <h3 className="mb-2 text-tuna-50">{data.jobTitle}</h3>
 
             <p className="text-justify">
               <a
@@ -47,7 +47,7 @@ export function Carrer() {
               <span>
                 {data.endDate
                   ? format(parseISO(data.endDate), 'LLL yyyy')
-                  : 'Present'}
+                  : 'Presente'}
               </span>
               <span> • </span>
               <span>{getDuration(data.startDate, data.endDate)}</span>
