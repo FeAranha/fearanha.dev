@@ -25,7 +25,7 @@ const iconMap: IconMap = {
 export function Sidebar() {
   return (
     <Collapsible.Root className="fixed data-[state=open]:bottom-0">
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between ">
         <Collapsible.Trigger asChild className="lg:hidden">
           <Button variant="ghost">
             <Menu className="h-6 w-6" />
@@ -37,7 +37,7 @@ export function Sidebar() {
         forceMount
         className="flex flex-1 flex-col gap-6 data-[state=closed]:hidden lg:data-[state=closed]:flex"
       >
-        <nav className="space-y-0.5 mt-5">
+        <nav className="space-y-0.5 mt-5 bg-black">
           {items.map((yearData, yearIndex) => {
             return yearData.projects.map((project, projectIndex) => {
               const IconComponent = iconMap[project.icon]
