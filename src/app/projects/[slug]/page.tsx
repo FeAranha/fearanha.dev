@@ -32,6 +32,7 @@ async function getProject(slug: string): Promise<Projects> {
 export default async function Projects({ params }: ProductProps) {
   const project = await getProject(params.slug)
 
+  console.log('slug', project.slug)
   return (
     <div className="">
       <h1 className="">{project.title}</h1>

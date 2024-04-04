@@ -41,6 +41,7 @@ export function Sidebar() {
           {items.map((yearData, yearIndex) => {
             return yearData.projects.map((project, projectIndex) => {
               const IconComponent = iconMap[project.icon]
+
               return (
                 <NavItem
                   key={`${yearIndex}-${projectIndex}`}

@@ -3,6 +3,7 @@
 import * as Tabs from '@radix-ui/react-tabs'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { getLatestSlugProject } from '@/utils/projects'
 
 export interface TabItemProps {
   value: string
@@ -11,8 +12,14 @@ export interface TabItemProps {
 }
 
 export function TabItem({ value, title, isSelected = false }: TabItemProps) {
+  const latestProjectSlug = getLatestSlugProject() ?? ''
+
   return (
-    <Link href={`/${value}`}>
+    <Link
+      href={
+        value === 'projects' ? `/projects/${latestProjectSlug}` : `/${value}`
+      }
+    >
       <Tabs.Trigger
         value={value}
         className=":px-1 relative text-sm font-medium text-tuna-300 outline-none hover:text-tuna-100 data-[state=active]:text-tuna-100 dark:text-tuna-100 dark:hover:text-tuna-100 dark:data-[state=active]:text-tuna-100 p-2"
