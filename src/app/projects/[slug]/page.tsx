@@ -21,9 +21,10 @@ interface ProductProps {
 async function getProject(slug: string): Promise<Projects> {
   const response = await api(`/projects/${slug}`, {
     next: {
-      revalidate: 60 * 60, // 1 hour
+      revalidate: 1, // 60 * 60, // 1 hour
     },
   })
+
   const project = await response.json()
 
   return project
@@ -31,12 +32,16 @@ async function getProject(slug: string): Promise<Projects> {
 
 export default async function Projects({ params }: ProductProps) {
   const project = await getProject(params.slug)
-
-  console.log('slug', project.slug)
   return (
-    <div className="">
-      <h1 className="">{project.title}</h1>
-      <p>{project.description}</p>
+    <div className="space-y-5">
+      <h2 className="text-2xl text-tuna-100 font-bold">{project.title}</h2>
+      <p className="text-justify">{project.description}</p>
+      <h2 className="text-2xl text-tuna-100 font-bold">Problema</h2>
+      <p className="text-justify">{project.problem}</p>
+      <h2 className="text-2xl text-tuna-100 font-bold">Tarefa</h2>
+      <p className="text-justify">{project.task}</p>
+      <h2 className="text-2xl text-tuna-100 font-bold">Solução</h2>
+      <p className="text-justify">{project.solution}</p>
     </div>
   )
 }
