@@ -33,7 +33,7 @@ async function getProject(slug: string): Promise<Projects> {
 export default async function Projects({ params }: ProductProps) {
   const project = await getProject(params.slug)
   return (
-    <div className="space-y-5">
+    <div className="space-y-5 max-w-[760px] justify-center ">
       <h2 className="text-2xl text-tuna-100 font-bold">{project.title}</h2>
       <p className="text-justify">{project.description}</p>
       <h2 className="text-2xl text-tuna-100 font-bold">Problema</h2>
