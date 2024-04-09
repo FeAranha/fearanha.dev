@@ -1,4 +1,4 @@
-import { ChevronRight } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
 import { ElementType } from 'react'
 import Link from 'next/link'
 
@@ -21,7 +21,7 @@ export function NavItem({ title, icon: Icon }: NavItemProps) {
     >
       <Icon className="h-5 w-5 text-tuna-50" />
       <span className="font-medium text-tuna-50">{title}</span>
-      <ChevronRight className="ml-auto h-5 w-5 group-hover:text-tuna-300" />
+      <ChevronDown className="ml-auto h-5 w-5 group-hover:text-tuna-300" />
     </Link>
   )
 }

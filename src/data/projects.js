@@ -8,7 +8,7 @@ const items = [
           'A blog for dev. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, reprehenderit non illo eos beatae rerum',
         url: 'https://github.com/FeAranha/ignews',
         problem:
-          'ccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, reprehenderit non illo eos beatae rerum.',
+          'cccccccccccc cccc cccccccc ccccccccccccccccccc ccccc ccccccccc cccc ccc ccccc ccccccccccc ccccccc cccccc Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, reprehenderit non illo eos beatae rerum.',
         task: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
         solution:
           'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, reprehenderit non illo eos beatae rerum, aperiam ad nulla vitae repellat aspernatur officia nostrum aliquid eum voluptatibus dolores fugit numquam delectus!',
@@ -34,7 +34,7 @@ const items = [
         description: 'A blog for any lol lol ol',
         url: 'https://github.com/FeAranha/ignews',
         problem:
-          'aaaaaa aa aaaa aaaaaaaaa aaaaa aaaaa aaaa aaaaa aaaaa aaaaa aaaa aaaaasbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbLorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, reprehenderit non illo eos beatae rerum.',
+          'aaaaaa aa aaaa aaaaaaaaa aaaaa aaaaa aaaa aaaaa aaaaa aaaaa aaaa aaaaa sbbbbbbbb bbbbbbbbbbbbb bbbbbbbbbLorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, reprehenderit non illo eos beatae rerum.',
         task: 'Adipisicing elit, Lorem, ipsum dolor sit amet consectetur .',
         solution:
           'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, reprehenderit non illo eos beatae rerum, aperiam ad nulla vitae repellat aspernatur officia nostrum aliquid eum voluptatibus dolores fugit numquam delectus!',
