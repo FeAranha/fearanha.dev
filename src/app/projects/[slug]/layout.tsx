@@ -9,8 +9,8 @@ export default function ProjectsLayout({ children }: { children: ReactNode }) {
           Projetos
         </h1>
       </div>
-      <div className="lg:-mt-14 lg:flex lg:flex-row justify-center items-center">
-        <div className="grid lg:flex lg:flex-row lg:min-h-screen">
+      <div className="lg:flex lg:flex-row justify-center items-center">
+        <div className="grid lg:flex lg:flex-row ">
           <Sidebar />
           <main className="max-w-[100vw] max-h-[100vw]">{children}</main>
         </div>
