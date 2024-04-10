@@ -4,7 +4,7 @@ import Loading from '../loading'
 export default async function Home() {
   return (
     <Suspense fallback={<Loading />}>
-      <div className="overflow-y-hidden grid md:grid-cols-2 min-h-screen gap-4 space-y-2">
+      <div className="grid md:grid-cols-2 min-h-screen gap-4 space-y-2">
         <div className="-mt-20 col-span-1 sm:col-span-1 flex flex-col justify-center">
           <div className="flex flex-col items-end">
             <div className=" flex flex-col">
