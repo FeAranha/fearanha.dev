@@ -1,0 +1,910 @@
+/* Contato */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px 8px;
+gap: 40px;
+
+position: relative;
+width: 1440px;
+height: 1024px;
+
+/* Tuna/900 */
+background: #30343F;
+
+
+/* header */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+gap: 16px;
+
+width: 1424px;
+height: 40px;
+
+background: #30343F;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Fe */
+
+margin: 0 auto;
+width: 36px;
+height: 39px;
+
+/* heading/lg
+
+24px
+*/
+font-family: 'Fira Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 38px;
+/* identical to box height, or 160% */
+
+/* Tuna/300 */
+color: #B2B8C7;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* tabs */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+isolation: isolate;
+
+margin: 0 auto;
+width: 210px;
+height: 26px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* tabButton */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 70px;
+height: 26px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+z-index: 0;
+
+
+/* SOBRE */
+
+width: 42px;
+height: 10px;
+
+font-family: 'Fira Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+/* or 160% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: flex-end;
+text-align: justify;
+
+/* Tuna/300 */
+color: #B2B8C7;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* tabButton */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 70px;
+height: 26px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+z-index: 1;
+
+
+/* SOBRE */
+
+width: 68px;
+height: 10px;
+
+font-family: 'Fira Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+/* or 160% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: flex-end;
+text-align: justify;
+
+/* Tuna/300 */
+color: #B2B8C7;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* tabButton */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 8px 14px;
+gap: 10px;
+
+width: 70px;
+height: 26px;
+
+background: radial-gradient(50% 46.15% at 50% 96.15%, rgba(152, 156, 166, 0.24) 12.14%, rgba(48, 52, 63, 0.6) 100%);
+/* Tuna/100 */
+border-bottom: 2px solid #ECEEF2;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 1;
+z-index: 2;
+
+
+/* SOBRE */
+
+width: 59px;
+height: 10px;
+
+font-family: 'Fira Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+/* or 160% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: flex-end;
+text-align: justify;
+
+/* Tuna/300 */
+color: #B2B8C7;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* higliiner */
+
+position: absolute;
+width: 70px;
+height: 2px;
+left: calc(50% - 70px/2 + 70px);
+top: 24px;
+
+/* Tuna/100 */
+background: #ECEEF2;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+z-index: 3;
+
+
+/* Ellipse 1 */
+
+margin: 0 auto;
+width: 25px;
+height: 23px;
+
+background: #D9D9D9;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* content */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+width: 760px;
+height: 872px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 1;
+
+
+/* container */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+gap: 8px;
+
+width: 760px;
+height: 631px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* contato */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 760px;
+height: 124px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Contato */
+
+width: 126px;
+height: 52px;
+
+/* Heading/xl
+
+32px
+*/
+font-family: 'Fira Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 51px;
+/* identical to box height, or 171% */
+display: flex;
+align-items: center;
+
+background: linear-gradient(90deg, #8124DD 0%, #54DD9B 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Lorem ipsum dolor sit amet consectetur, netus gravida enim elit habitant ornare at aenean cras ullamcorper. Email, discord sit amet consectetur */
+
+width: 760px;
+height: 64px;
+
+font-family: 'Fira Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* or 160% */
+text-align: justify;
+
+/* Tuna/300 */
+color: #B2B8C7;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* Frame 4 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-start;
+padding: 0px;
+
+width: 760px;
+height: 499px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 8px;
+
+width: 380px;
+height: 499px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* Envie um emal: */
+
+width: 202px;
+height: 39px;
+
+/* heading/lg
+
+24px
+*/
+font-family: 'Fira Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 38px;
+/* identical to box height, or 160% */
+
+/* Tuna/100 */
+color: #ECEEF2;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* NAME: */
+
+width: 48px;
+height: 26px;
+
+font-family: 'Fira Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 160% */
+
+/* Tuna/100 */
+color: #ECEEF2;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* Text field */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 16px;
+gap: 12px;
+
+width: 380px;
+height: 48px;
+
+/* Tuna/900 */
+background: #30343F;
+/* Tuna/400 */
+border: 2px solid #8892A8;
+border-radius: 5px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Placeholder */
+
+width: 348px;
+height: 22px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+color: #A8A8B3;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* EMAIL: */
+
+width: 58px;
+height: 26px;
+
+font-family: 'Fira Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 160% */
+
+/* Tuna/100 */
+color: #ECEEF2;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* Text field */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 16px;
+gap: 12px;
+
+width: 380px;
+height: 48px;
+
+/* Tuna/900 */
+background: #30343F;
+/* Tuna/400 */
+border: 2px solid #8892A8;
+border-radius: 5px;
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Placeholder */
+
+width: 348px;
+height: 22px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+color: #A8A8B3;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* NAME: */
+
+width: 48px;
+height: 26px;
+
+font-family: 'Fira Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 160% */
+
+/* Tuna/100 */
+color: #ECEEF2;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* Text field */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 12px 16px;
+gap: 12px;
+
+width: 380px;
+height: 148px;
+
+/* Tuna/900 */
+background: #30343F;
+/* Tuna/400 */
+border: 2px solid #8892A8;
+border-radius: 5px;
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Placeholder */
+
+width: 348px;
+height: 22px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+display: flex;
+align-items: center;
+
+color: #A8A8B3;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 1;
+
+
+/* Secondary Button */
+
+box-sizing: border-box;
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 20px;
+gap: 12px;
+
+width: 357px;
+height: 40px;
+
+/* Moon Raker/700 */
+border: 1px solid #8124DD;
+border-radius: 5px;
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+
+
+/* label */
+
+width: 42px;
+height: 20px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 140%;
+/* identical to box height, or 20px */
+text-transform: uppercase;
+
+/* Tuna/200 */
+color: #D6D9E1;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 3 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+padding: 10px;
+gap: 10px;
+
+width: 380px;
+height: 499px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 1;
+
+
+/* Footer */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-end;
+padding: 0px 0px 8px;
+gap: 36px;
+
+width: 1424px;
+height: 32px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* email */
+
+width: 42px;
+height: 24px;
+
+font-family: 'Fira Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+/* or 160% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+/* Tuna/300 */
+color: #B2B8C7;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* discord */
+
+width: 59px;
+height: 24px;
+
+font-family: 'Fira Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+/* or 160% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+/* Tuna/300 */
+color: #B2B8C7;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* github */
+
+width: 51px;
+height: 24px;
+
+font-family: 'Fira Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+/* or 160% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+/* Tuna/300 */
+color: #B2B8C7;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* linkedin */
+
+width: 68px;
+height: 24px;
+
+font-family: 'Fira Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+/* or 160% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+/* Tuna/300 */
+color: #B2B8C7;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* instagram */
+
+width: 76px;
+height: 24px;
+
+font-family: 'Fira Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+/* or 160% */
+/* leading-trim and text-edge are draft CSS properties.
+
+Read more: https://drafts.csswg.org/css-inline-3/#leading-trim
+*/
+leading-trim: both;
+text-edge: cap;
+display: flex;
+align-items: center;
+
+/* Tuna/300 */
+color: #B2B8C7;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
