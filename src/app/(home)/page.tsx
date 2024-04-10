@@ -16,7 +16,14 @@ export default async function Home() {
                 Adoro ajudar pessoas, desenvolvo sua solução 🚀
               </p>
               <p className="w-max shadow-lg rounded-lg">
-                Press ctrl k to start -{'>'}
+                Press{' '}
+                <span className="font-bold p-[2px] text-tuna-50 bg-tuna-400 rounded-sm">
+                  ctrl
+                </span>{' '}
+                <span className="font-bold p-[2px] text-tuna-50 bg-tuna-400 rounded-sm">
+                  k
+                </span>{' '}
+                to start -{'>'}
               </p>
             </div>
           </div>

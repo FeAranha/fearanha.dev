@@ -17,35 +17,37 @@ export default function Contacts() {
           </p>
           <h2>Enviar um email:</h2>
           <form id="sendEmail">
-            <label htmlFor="subject">Assunto</label>
-            <Input.Root>
-              <Input.Control
-                id="subject"
-                defaultValue="Sobre oque?"
-                className="w-[270px] bg-tuna-900"
-              />
-            </Input.Root>
+            <div className="w-max">
+              <label htmlFor="subject">Assunto</label>
+              <Input.Root>
+                <Input.Control id="subject" defaultValue="Sobre oque?" />
+              </Input.Root>
 
-            <label htmlFor="email">Email</label>
-            <Input.Root>
-              <Input.Prefix>
-                <Mail className="h-5 w-5 text-tuna-100" />
-              </Input.Prefix>
-              <Input.Control
-                id="email"
-                type="email"
-                defaultValue="exp@email.com"
-              />
-            </Input.Root>
-
+              <label htmlFor="email">Email</label>
+              <Input.Root>
+                <Input.Prefix>
+                  <Mail className="h-5 w-5 text-tuna-100" />
+                </Input.Prefix>
+                <Input.Control
+                  id="email"
+                  type="email"
+                  defaultValue="exp@email.com"
+                />
+              </Input.Root>
+            </div>
             <label htmlFor="subject">Mensagem</label>
             <div className="mt-5">
               <textarea
                 id="msg"
-                className="resize rounded-md w-[296px] h-[150px] bg-tuna-900 border border-tuna-100 shadow-sm focus-within:border-violet-300 focus-within:ring-2 focus-within:ring-violet-100"
+                className="resize rounded-md w-[296px] lg:w-[380px] h-[150px] bg-tuna-900 border border-tuna-100 shadow-sm focus-within:border-violet-300 focus-within:ring-2 focus-within:ring-violet-100"
               ></textarea>
             </div>
-            <Button type="button" variant="primary" className="w-[296px] mb-10">
+            <Button
+              type="submit"
+              form="sendEmail"
+              variant="primary"
+              className="w-[296px] mb-10"
+            >
               Enviar
             </Button>
           </form>
