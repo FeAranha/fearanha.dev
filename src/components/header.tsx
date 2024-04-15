@@ -19,7 +19,7 @@ export function Header() {
         <Image src={Logo} alt="logo" onClick={handleResetNavBar} />
       </Link>
       <NavBar resetNavBar={resetNavBar} setResetNavBar={setResetNavBar} />
-      <Image src={Logo} alt="logo" />
+      <div>{/* command k */}</div>
     </div>
   )
 }
