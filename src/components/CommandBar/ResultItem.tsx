@@ -11,14 +11,14 @@ const ResultItem = React.forwardRef(function ResultItem(
       ref={ref}
       className={
         active
-          ? `px-3 py-2 leading-none rounded text-violet-50 flex items-center justify-between bg-violet-400`
-          : `px-3 py-2 leading-none rounded text-violet-50 flex items-center justify-between hover:bg-violet-400`
+          ? `px-3 py-2 leading-none rounded text-violet-50 flex items-center justify-between bg-tuna-900`
+          : `px-3 py-2 leading-none rounded text-violet-50 flex items-center justify-between hover:bg-tuna-900`
       }
     >
       <header className="flex items-center">
         {action.icon}
-        <div className="rounded flex flex-col items-start justify-center relative select-none outline-none hover:bg-violet-400">
-          <h1 className="text-lg text-violet-50"> {action.name} </h1>
+        <div className="rounded flex flex-col items-start justify-center relative select-none outline-none hover:bg-tuna-900">
+          <h1 className="text-lg text-violet-50 ml-5"> {action.name} </h1>
           <p className="text-md text-violet-900 py-1"> {action.subtitle} </p>
         </div>
       </header>

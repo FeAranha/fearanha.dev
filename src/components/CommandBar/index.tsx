@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { SquareUserRound } from 'lucide-react'
+import { Lightbulb, UserRoundSearch, Headset, Home } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import {
   KBarAnimator,
@@ -29,7 +29,7 @@ const KBarLayoutProvider: React.FC<KBarLayoutProviderProps> = ({
       keywords: 'go-about',
       section: 'Navigation',
       perform: () => router.push('/about'),
-      icon: <SquareUserRound className="w-6 h-6" />,
+      icon: <UserRoundSearch className="w-6 h-6" />,
     },
     {
       id: 'projects',
@@ -38,16 +38,16 @@ const KBarLayoutProvider: React.FC<KBarLayoutProviderProps> = ({
       keywords: 'go-projects',
       section: 'Navigation',
       perform: () => router.push('/projects/ignews-2-1'),
-      icon: <SquareUserRound className="w-6 h-6" />,
+      icon: <Lightbulb className="w-6 h-6" />,
     },
     {
       id: 'contacts',
       name: 'Contacts',
-      shortcut: ['c'],
+      shortcut: ['c', 'o'],
       keywords: 'go-contacts',
       section: 'Navigation',
       perform: () => router.push('/contacts'),
-      icon: <SquareUserRound className="w-6 h-6" />,
+      icon: <Headset className="w-6 h-6" />,
     },
     {
       id: 'home',
@@ -56,18 +56,18 @@ const KBarLayoutProvider: React.FC<KBarLayoutProviderProps> = ({
       keywords: 'go-home',
       section: 'Navigation',
       perform: () => router.push('/'),
-      icon: <SquareUserRound className="w-6 h-6" />,
+      icon: <Home className="w-6 h-6" />,
     },
   ]
 
   return (
     <KBarProvider actions={actions} options={{ enableHistory: true }}>
       <KBarPortal>
-        <KBarPositioner>
-          <KBarAnimator className="max-w-3xl LspInfo w-3/6 bg-tuna-950 opacity-65 border-r-8 overflow-hidden shadow-tuna-950">
+        <KBarPositioner className="backdrop-saturate-50 backdrop-brightness-50">
+          <KBarAnimator className="rounded-lg border border-tuna-100 max-w-3xl LspInfo w-3/6 bg-tuna-950 overflow-hidden shadow-tuna-950">
             <KBarSearch
               placeholder="Type a command or search…"
-              className="py-4 px-5 text-xs w-full outline-none border-none bg-tuna-950 text-black opacity-65"
+              className="py-4 px-5 text-xs w-full outline-none border-none bg-tuna-950 text-tuna-50"
             />
             <RenderResults />
           </KBarAnimator>
