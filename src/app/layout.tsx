@@ -20,9 +20,11 @@ export default function RootLayout({
       <body
         className={`${GeistMono.className} bg-tuna-900 text-tuna-300 antialiased m-4`}
       >
-        <Header />
-        <KBarLayoutProvider>{children}</KBarLayoutProvider>
-        <Footer />
+        <KBarLayoutProvider>
+          <Header />
+          {children}
+          <Footer />
+        </KBarLayoutProvider>
       </body>
     </html>
   )

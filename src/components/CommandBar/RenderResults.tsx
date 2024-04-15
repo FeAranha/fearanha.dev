@@ -4,6 +4,8 @@ import { KBarResults, useMatches } from 'kbar'
 export function RenderResults() {
   const { results } = useMatches()
 
+  console.log(results)
+
   return (
     <KBarResults
       items={results}

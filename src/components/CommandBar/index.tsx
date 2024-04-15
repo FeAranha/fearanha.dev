@@ -43,7 +43,7 @@ const KBarLayoutProvider: React.FC<KBarLayoutProviderProps> = ({
     {
       id: 'contacts',
       name: 'Contacts',
-      shortcut: ['a'],
+      shortcut: ['c'],
       keywords: 'go-contacts',
       section: 'Navigation',
       perform: () => router.push('/contacts'),
@@ -52,7 +52,7 @@ const KBarLayoutProvider: React.FC<KBarLayoutProviderProps> = ({
     {
       id: 'home',
       name: 'Home',
-      shortcut: ['a'],
+      shortcut: ['h'],
       keywords: 'go-home',
       section: 'Navigation',
       perform: () => router.push('/'),
@@ -64,10 +64,10 @@ const KBarLayoutProvider: React.FC<KBarLayoutProviderProps> = ({
     <KBarProvider actions={actions} options={{ enableHistory: true }}>
       <KBarPortal>
         <KBarPositioner>
-          <KBarAnimator className="max-w-3xlLspInfo w-3/6 bg-white border-r-8 overflow-hidden shadow-white">
+          <KBarAnimator className="max-w-3xl LspInfo w-3/6 bg-tuna-950 opacity-65 border-r-8 overflow-hidden shadow-tuna-950">
             <KBarSearch
               placeholder="Type a command or search…"
-              className="py-4 px-5 text-xs w-full outline-none border-none bg-white text-black "
+              className="py-4 px-5 text-xs w-full outline-none border-none bg-tuna-950 text-black opacity-65"
             />
             <RenderResults />
           </KBarAnimator>

@@ -11,18 +11,18 @@ const ResultItem = React.forwardRef(function ResultItem(
       ref={ref}
       className={
         active
-          ? `px-3 py-2 leading-none rounded text-violet11 flex items-center justify-between bg-violet4`
-          : `px-3 py-2 leading-none rounded text-violet11 flex items-center justify-between hover:bg-violet4`
+          ? `px-3 py-2 leading-none rounded text-violet-50 flex items-center justify-between bg-violet-400`
+          : `px-3 py-2 leading-none rounded text-violet-50 flex items-center justify-between hover:bg-violet-400`
       }
     >
       <header className="flex items-center">
         {action.icon}
-        <div className="rounded flex flex-col items-start justify-center relative select-none outline-none hover:bg-violet4">
-          <h1 className="text-lg text-violet11"> {action.name} </h1>
-          <p className="text-md text-violet9 py-1"> {action.subtitle} </p>
+        <div className="rounded flex flex-col items-start justify-center relative select-none outline-none hover:bg-violet-400">
+          <h1 className="text-lg text-violet-50"> {action.name} </h1>
+          <p className="text-md text-violet-900 py-1"> {action.subtitle} </p>
         </div>
       </header>
-      <div className="text-[15px] leading-none text-violet11 rounded flex justify-between items-center relative select-none outline-none hover:bg-violet4">
+      <div className="text-[15px] leading-none text-violet-50 rounded flex justify-between items-center relative select-none outline-none hover:bg-violet-400">
         {action.shortcut?.length ? (
           <div
             aria-hidden

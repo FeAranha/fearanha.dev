@@ -46,7 +46,7 @@ export default function Contacts() {
               type="submit"
               form="sendEmail"
               variant="primary"
-              className="w-[296px] mb-10"
+              className="lg:w-[380px] w-[296px] mb-10"
             >
               Enviar
             </Button>
