@@ -4,8 +4,8 @@ import { Mail } from 'lucide-react'
 
 export default function Contacts() {
   return (
-    <div className="items-center flex justify-between flex-col">
-      <div className="flex flex-col lg:w-[760px]">
+    <div className="flex items-center flex-col">
+      <div className="items-center flex flex-col justify-center w-[760px]">
         <div className="flex flex-col space-y-5">
           <h1 className="w-max text-3xl font-bold bg-gradient-to-r from-blueZodiac-900 via-blueZodiac-400 to-emerald-500 inline-block text-transparent bg-clip-text">
             Contatos
