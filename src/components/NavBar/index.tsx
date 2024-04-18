@@ -37,7 +37,7 @@ export function NavBar({ resetNavBar, setResetNavBar }: NavBarProps) {
             />
             <TabItem
               value="contacts"
-              title="CONTATOS"
+              title="CONTATO"
               isSelected={currentTab === 'contacts'}
             />
           </Tabs.List>

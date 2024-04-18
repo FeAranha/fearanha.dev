@@ -28,7 +28,7 @@ export function Root(props: InputRootProps) {
   return (
     <div
       className={twMerge(
-        'lg:w-[380px] flex w-full my-5 items-center gap-2 rounded-lg border border-tuna-300 px-3 py-2 shadow-sm',
+        'sm:w-[380px] flex w-full my-5 items-center gap-2 rounded-lg border border-tuna-300 px-3 py-2 shadow-sm',
         'focus-within:border-tuna-300 focus-within:ring-2 focus-within:ring-tuna-100',
         props.className,
       )}

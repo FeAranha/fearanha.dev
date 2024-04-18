@@ -27,7 +27,7 @@ export function Carrer() {
 
       {items.map((data, index) => {
         return (
-          <div key={index} className="grid grid-flow-row mb-5 ">
+          <div key={index} className="grid grid-flow-row mb-10 ">
             <h3 className="mb-2 text-tuna-50">{data.jobTitle}</h3>
 
             <p className="text-justify">
