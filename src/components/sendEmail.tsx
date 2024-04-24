@@ -1,7 +1,11 @@
 import { Resend } from 'resend'
 import { EmailTemplate } from '@/components/emailTemplate'
 
-export async function sendEmail(subject: string, message: string) {
+export async function sendEmail(
+  subject: string,
+  email: string,
+  message: string,
+) {
   const resend = new Resend(process.env.RESEND_API_KEY)
 
   try {
@@ -9,7 +13,8 @@ export async function sendEmail(subject: string, message: string) {
       from: 'Acme <onboarding@resend.dev>',
       to: ['felipearanha.c@gmail.com'],
       subject,
-      react: EmailTemplate({ msg: message }),
+      reply_to: email,
+      react: EmailTemplate({ email, message, subject }),
       text: message,
     })
 

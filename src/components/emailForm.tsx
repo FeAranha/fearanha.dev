@@ -10,10 +10,13 @@ import { sendEmail } from './sendEmail'
 export function EmailForm() {
   const [subject, setSubject] = useState('Em que posso te ajudar?')
   const [message, setMessage] = useState('')
+  const [email, setEmail] = useState('exp@email.com') // Adicionando o estado para o email
 
-  async function send() {
+  async function send(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault() // Evita o comportamento padrão do formulário
+
     try {
-      const id = await sendEmail(subject, message)
+      const id = await sendEmail(subject, message, email) // Adicionando o email na chamada da função
       toast.success(`Email enviado, ID: ${id}`)
     } catch (error) {
       console.error('Erro ao enviar email:', error)
@@ -37,7 +40,12 @@ export function EmailForm() {
           <Input.Prefix>
             <Mail className="h-5 w-5 text-tuna-100" />
           </Input.Prefix>
-          <Input.Control id="email" type="email" defaultValue="exp@email.com" />
+          <Input.Control
+            id="email"
+            type="email"
+            value={email} // Alterando para usar o estado do email
+            onChange={(e) => setEmail(e.target.value)} // Atualizando o estado do email
+          />
         </Input.Root>
       </div>
       <label htmlFor="subject">Mensagem</label>
