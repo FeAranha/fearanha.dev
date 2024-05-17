@@ -1,24 +1,46 @@
-import { Button } from '@/components/Button'
-import * as Input from '@/components/Input'
-import { EmailTemplate } from '@/components/emailTemplate'
+'use client'
+
+import React from 'react'
 import { Mail } from 'lucide-react'
-import { Resend } from 'resend'
+import * as Input from '@/components/Input'
+import { Button } from '@/components/Button'
 
-export default async function Contacts() {
-  async function send() {
-    'use server'
+export default function Contacts() {
+  async function send(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault()
 
-    const resend = new Resend(process.env.RESEND_API_KEY)
+    const formData = new FormData(event.currentTarget)
+    const name = formData.get('name')
+    const email = formData.get('email')
+    const message = formData.get('message')
 
-    const data = await resend.emails.send({
-      from: 'Acme <onboarding@resend.dev>',
-      to: ['felipearanha.c@gmail.com'],
-      subject: 'Hello world',
-      react: EmailTemplate({ firstName: 'John' }),
-      text: 'test',
-    })
+    if (
+      typeof name !== 'string' ||
+      typeof email !== 'string' ||
+      typeof message !== 'string'
+    ) {
+      console.error('All fields are required.')
+      return
+    }
 
-    console.log(data)
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
+      })
+
+      const result = await response.json()
+      if (response.ok) {
+        console.log('Email sent successfully:', result)
+      } else {
+        console.error('Error sending email:', result)
+      }
+    } catch (error) {
+      console.error('Error sending email:', error)
+    }
   }
 
   return (
@@ -33,13 +55,14 @@ export default async function Contacts() {
           consectetur
         </p>
         <h2>Enviar um email:</h2>
-        <form id="sendEmail" action={send}>
+        <form id="sendEmail" onSubmit={send} method="post">
           <div className="w-max">
-            <label htmlFor="subject">Assunto</label>
+            <label htmlFor="name">Nome</label>
             <Input.Root>
               <Input.Control
-                id="subject"
-                defaultValue="Em que posso te ajudar?"
+                id="name"
+                name="name"
+                defaultValue="Como posso te chamar?"
               />
             </Input.Root>
 
@@ -50,15 +73,17 @@ export default async function Contacts() {
               </Input.Prefix>
               <Input.Control
                 id="email"
+                name="email"
                 type="email"
                 defaultValue="exp@email.com"
               />
             </Input.Root>
           </div>
-          <label htmlFor="subject">Mensagem</label>
+          <label htmlFor="message">Mensagem</label>
           <div className="mt-5">
             <textarea
-              id="msg"
+              id="message"
+              name="message"
               className="resize rounded-md w-[296px] sm:w-[380px] h-[150px] bg-tuna-900 border border-tuna-100 shadow-sm focus-within:border-violet-300 focus-within:ring-2 focus-within:ring-violet-100"
             ></textarea>
           </div>
