@@ -35,11 +35,14 @@ export default function Contacts() {
       const result = await response.json()
       if (response.ok) {
         console.log('Email sent successfully:', result)
+        // TODO toast
+        alert('Email enviado!')
       } else {
         console.error('Error sending email:', result)
       }
     } catch (error) {
       console.error('Error sending email:', error)
+      alert('Falha no envio!')
     }
   }
 
