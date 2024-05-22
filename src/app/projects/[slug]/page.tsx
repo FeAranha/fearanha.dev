@@ -1,6 +1,7 @@
-import { api } from '@/data/api'
+'use client'
+
 import { notFound } from 'next/navigation'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 interface Projects {
   title: string
@@ -19,11 +20,13 @@ interface ProductProps {
     slug: string
   }
 }
+
 async function getProject(slug: string): Promise<Projects> {
   try {
-    const response = await api(`/projects/${slug}`, {
-      next: {
-        revalidate: 1, // 60 * 60, // 1 hour
+    const response = await fetch(`/projects/${slug}`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
       },
     })
 
@@ -44,8 +47,25 @@ async function getProject(slug: string): Promise<Projects> {
   }
 }
 
-const Projects: React.FC<ProductProps> = async ({ params }) => {
-  const project = await getProject(params.slug)
+export default function Projects({ params }: ProductProps) {
+  const [project, setProject] = useState<Projects | null>(null)
+
+  useEffect(() => {
+    async function fetchProject() {
+      try {
+        const fetchedProject = await getProject(params.slug)
+        setProject(fetchedProject)
+      } catch (error) {
+        console.error('Error fetching project:', error)
+      }
+    }
+
+    fetchProject()
+  }, [params.slug])
+
+  if (!project) {
+    return <div>Loading...</div>
+  }
 
   return (
     <div className="lg:ml-36 2xl:ml-0 space-y-5 max-w-[760px] mb-10">
@@ -60,5 +80,3 @@ const Projects: React.FC<ProductProps> = async ({ params }) => {
     </div>
   )
 }
-
-export default Projects
