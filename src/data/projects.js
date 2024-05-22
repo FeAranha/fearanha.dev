@@ -48,18 +48,24 @@ const items = [
     year: '2021',
     projects: [
       {
-        title: 'Ignews 1',
+        title: 'Ignews',
         description:
-          'blog for developers, by assigment aaaaaaaaaa bbbb Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus dolores, in voluptatum odit magnam autem harum doloremque porro laudantium quas a rerum repellat distinctio non vel veniam veritatis ab quisquam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur in veniam possimus eius debitis omnis fugiat iusto, quia nobis saepe exercitationem cum illo, alias aut maiores, aliquid quaerat animi sequi!',
-        url: 'https://github.com/FeAranha/ignews',
-        problem:
-          'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, reprehenderit non illo eos beatae rerum. developers, by assigment aaaaaaaaaa bbbb Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus dolores, in voluptatum odit magnam autem harum doloremque porro laudantium quas a rerum repellat di',
-        task: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.  sit amet consectetur adipisicing elit. Ullam, reprehenderit non illo eos beatae rerum, aperiam ad nulla vitae repellat aspern',
+          'Um blog utilizando CMS Prismic para criação de posts com agendamento ou imediato. É preciso fazer o login com uma conta social gitHub e fazer o pagamento da assinatura por meio da API Stripe.',
+        url: 'https://ignews-beta-amber.vercel.app/',
+        problem: 'Fixar os conhecimentos em Next12, Testes unitarios, Deploy.',
+        task: [
+          'Pagina com Posts parcialmente visível, full acesso após ser assinante.',
+          'Realizar login por meio do Next Auth.',
+          'Banco de dados não relacional Fauna para cadastro de usuários e suas assinaturas.',
+          'Full-stack sendo o backend-end com API Route do Next12.',
+          'Testes unitario com Jest.',
+          'Deploy na vercel node16x.',
+        ],
         solution:
-          'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, reprehenderit non illo eos beatae rerum, aperiam ad nulla vitae repellat aspernatur officia nostrum aliquid eum voluptatibus dolores fugit numquam delectus! blog for developers, by assigment aaaaaaaaaa bbbb Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus dolores, in voluptatum odit magnam autem harum doloremque porro laudantium quas a rerum repellat distinctio non vel veniam veritatis ab quisquam! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur in veniam possimus eius debitis omnis fugiat iusto, quia nobis saepe exercitationem cum illo, alias aut maiores, aliquid quaerat animi sequi!  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam, reprehenderit non illo eos beatae rerum. developers, by assigment aaaaaaaaaa bbbb Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus dolores, in voluptatum odit magnam autem harum doloremque porro laudantium quas a rerum repellat di',
+          'Acompanhamento das aulas e documentação em notion, cumprimendos dos desafios e prazos, emitido o: ',
         icon: 'BookHeart',
         active: false,
-        slug: 'ignews-1',
+        slug: 'ignews',
       },
     ],
   },
