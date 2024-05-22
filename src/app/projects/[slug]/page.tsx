@@ -21,33 +21,34 @@ interface ProductProps {
   }
 }
 
-async function getProject(slug: string): Promise<Projects> {
-  try {
-    const response = await fetch(`/projects/${slug}`, {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    })
-
-    if (!response.ok) {
-      console.error(
-        'Failed to fetch project:',
-        response.status,
-        response.statusText,
-      )
-      notFound()
-    }
-
-    const project = await response.json()
-    return project
-  } catch (error) {
-    console.error('Error fetching projects', error)
-    throw error
-  }
-}
-
 export default function Projects({ params }: ProductProps) {
+  async function getProject(slug: string): Promise<Projects> {
+    try {
+      const response = await fetch(`/api/projects/${slug}`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+
+      if (!response.ok) {
+        console.error(
+          'Failed to fetch project:',
+          response.status,
+          response.statusText,
+        )
+        notFound()
+      }
+
+      const project = await response.json()
+      console.log('project=>', project.slug)
+      return project
+    } catch (error) {
+      console.error('Error fetching projects', error)
+      throw error
+    }
+  }
+
   const [project, setProject] = useState<Projects | null>(null)
 
   useEffect(() => {
