@@ -1,6 +1,5 @@
-'use server'
-
 import { api } from '@/data/api'
+import { notFound } from 'next/navigation'
 
 interface Projects {
   title: string
@@ -21,15 +20,28 @@ interface ProductProps {
 }
 
 async function getProject(slug: string): Promise<Projects> {
-  const response = await api(`/projects/${slug}`, {
-    next: {
-      revalidate: 1, // 60 * 60, // 1 hour
-    },
-  })
+  try {
+    const response = await api(`/projects/${slug}`, {
+      next: {
+        revalidate: 1, // 60 * 60, // 1 hour
+      },
+    })
 
-  const project = await response.json()
+    if (!response.ok) {
+      console.error(
+        'Failed to fetch project:',
+        response.status,
+        response.statusText,
+      )
+      notFound()
+    }
 
-  return project
+    const project = await response.json()
+    return project
+  } catch (error) {
+    console.error('Error fetching projects', error)
+    throw error
+  }
 }
 
 export default async function Projects({ params }: ProductProps) {
