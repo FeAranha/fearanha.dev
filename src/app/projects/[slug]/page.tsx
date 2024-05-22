@@ -1,5 +1,6 @@
 import { api } from '@/data/api'
 import { notFound } from 'next/navigation'
+import React from 'react'
 
 interface Projects {
   title: string
@@ -18,7 +19,6 @@ interface ProductProps {
     slug: string
   }
 }
-
 async function getProject(slug: string): Promise<Projects> {
   try {
     const response = await api(`/projects/${slug}`, {
@@ -44,8 +44,9 @@ async function getProject(slug: string): Promise<Projects> {
   }
 }
 
-export default async function Projects({ params }: ProductProps) {
+const Projects: React.FC<ProductProps> = async ({ params }) => {
   const project = await getProject(params.slug)
+
   return (
     <div className="lg:ml-36 2xl:ml-0 space-y-5 max-w-[760px] mb-10">
       <h2 className="text-2xl text-tuna-100 font-bold">{project.title}</h2>
@@ -59,3 +60,5 @@ export default async function Projects({ params }: ProductProps) {
     </div>
   )
 }
+
+export default Projects
