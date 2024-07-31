@@ -1,6 +1,7 @@
 import { Carrer } from '@/components/career'
 import Image from 'next/image'
 import ProfileImg from '../../../public/static/images/profile.png'
+
 export default function About() {
   return (
     <div className="flex items-center flex-col">
@@ -8,32 +9,42 @@ export default function About() {
         Descobrir, definir, desenvolver, entregar ♻
       </h1>
       <div className="flex flex-col-reverse max-w-[760px] justify-center items-center sm:flex-row">
-        <div className="flex flex-col">
+        <div className="flex flex-col sm:items-center">
           <p className="mb-5 text-justify">
-            Iniciei como Suporte de TI e depois como Administrador de Redes,
-            Service Desk e intermediário entre ERP e Negócio. Atuei por 6 anos
-            como Analista de TI gerenciando todo o parque de TI.
+            Iniciei minha carreira como Suporte de TI, avançando rapidamente
+            para Analista de TI, onde atuei no Service Desk e como intermediário
+            entre ERP e Negócio. Durante seis anos, gerenciei todo o parque de
+            TI, incluindo a implantação e monitoramento de um sistema de service
+            desk GLPI em ambiente Linux.
           </p>
           <p className="mb-5 text-justify">
-            Implantei e monitorei um sistema de service desk GLPI em ambiente
-            Linux, gerenciei técnicos de suporte, adequei toda a infraestrutura
-            com relação a licenciamentos de softwares e GAP Microsoft e
-            segurança da informação conscientizando colaboradores e adoção de
-            firewall, antivírus corporativo entre outras medidas.
+            Minhas responsabilidades incluíram a gestão de técnicos de suporte,
+            adequação da infraestrutura de TI com foco em licenciamentos de
+            software e conformidade com GAP Microsoft, além de implementar
+            medidas de segurança da informação, como a conscientização de
+            colaboradores, adoção de firewalls e antivírus corporativos.
           </p>
           <p className="mb-5 text-justify">
-            Atualmente Desenvolvo sistemas Web e aplicativos, venho me
-            aprofundando em JavaScript e TypeScript, especificamente na
-            biblioteca ReactJS e framework NextJS, no Backend com NodeJS e
-            NestJS e no desenvolvimento Mobile com ReactNative e expo
-            aproveitando os conhecimentos de ReactJS.
+            Possuo ampla experiência com Hyper-v, CentOS, Windows Server, Active
+            Directory e SQLServer, o que me permitiu garantir a eficiência e
+            segurança das operações de TI.
+          </p>
+          <p className="mb-5 text-justify">
+            Atualmente, estou focado no desenvolvimento de sistemas web e
+            aplicativos móveis. Tenho me aprofundado em JavaScript e TypeScript,
+            com expertise em ReactJS e NextJS para frontend, e NodeJS para
+            backend. No desenvolvimento mobile, utilizo React Native e Expo,
+            aproveitando todo o conhecimento adquirido com ReactJS para criar
+            soluções robustas e eficientes.
           </p>
         </div>
-        <Image
-          className="self-stretch w-[200px] h-[250px] sm:w-[300px] sm:h-[400px] mb-5 ml-5"
-          src={ProfileImg}
-          alt=""
-        />
+        <div className="flex justify-center sm:justify-start sm:w-auto sm:flex-shrink-0">
+          <Image
+            className="w-[200px] h-[250px] sm:w-[320px] sm:h-[420px] mb-5 ml-5"
+            src={ProfileImg}
+            alt="foto de perfil"
+          />
+        </div>
       </div>
 
       <Carrer />
